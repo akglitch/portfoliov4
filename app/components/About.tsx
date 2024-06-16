@@ -9,8 +9,9 @@ export const About: React.FC = () => {
         ["Pandas", "Numpy"],
     ];
 
-    return (
-        <div className="bg-[#0a192f] text-white pb-44 p-8 min-h-100">
+    return ( 
+        <div id='about'>
+        <div className="bg-[#0a192f] text-white pb-44 p-8 min-h-screen">
             <div className="max-w-6xl mx-auto">
                 <div className="flex items-baseline space-x-2 mb-8">
                     <span className="text-green-400 text-xl font-mono">01.</span>
@@ -40,6 +41,7 @@ export const About: React.FC = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

@@ -1,15 +1,37 @@
 "use client";
 import React, { useState } from "react";
-import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarContent,
+  NavbarItem,
+  Link,
+} from "@nextui-org/react";
+import { url } from "inspector";
 
 export default function App() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
 
   const menuItems = [
-    "01. About",
-    "02. Blog",
-    "03. Work",
-    "04. Contact",
+    {
+      name: "01. home",
+      url: "/#",
+    },
+    {
+      name: "02.About",
+      url: "/#about",
+    },
+    {
+      name: "03.Projects",
+      url: "/#projects",
+    },
+    {
+      name: "04.Contact",
+      url: "/#contact",
+    },
   ];
 
   const toggleSideNav = () => {
@@ -18,10 +40,10 @@ export default function App() {
 
   return (
     <>
-      <Navbar className="bg-[#0a192f] py-4 px-6" disableAnimation isBordered>
+      <Navbar className="bg-[#0a192f] py-4 px-6 " maxWidth="full">
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarBrand>
-            <h2 className="text-green-400 font-mono text-lg">Kaytee</h2>
+            <h2 className="text-green-400  text-4xl">KT</h2>
           </NavbarBrand>
         </NavbarContent>
 
@@ -29,14 +51,20 @@ export default function App() {
           <NavbarMenuToggle onClick={toggleSideNav} />
         </NavbarContent>
 
-        <NavbarContent className="hidden sm:flex gap-8 text-white text-sm font-medium" justify="end">
+        <NavbarContent
+          className="hidden sm:flex gap-8 text-white text-sm font-medium"
+          justify="end"
+        >
           <NavbarBrand>
-            <h2 className="text-green-400">Kaytee</h2>
+            <h2 className="text-green-400 text-4xl">KT </h2>
           </NavbarBrand>
-          {menuItems.map((item, index) => (
-            <NavbarItem key={index}>
-              <Link className="hover:text-green-400 transition duration-300 text-green-400" href="#">
-                {item}
+          {menuItems.map(({ name, url }) => (
+            <NavbarItem key={url}>
+              <Link
+                className="hover:text-green-400 transition duration-300 text-green-400"
+                href={url}
+              >
+                {name}
               </Link>
             </NavbarItem>
           ))}
@@ -45,19 +73,19 @@ export default function App() {
 
       {/* Side Navigation for Small Screens */}
       {isSideNavOpen && (
-        <div className="fixed inset-0 bg-[#0a192f] bg-opacity-95 z-50 flex flex-col items-center text-white text-lg p-6">
+        <div className="fixed inset-0 bg-[#0a192f] bg-opacity-95 z-10 flex flex-col items-center text-white text-lg p-6 max-w-8xl">
           <button className="absolute top-4 right-4" onClick={toggleSideNav}>
             ✖
           </button>
           <div className="flex flex-col gap-8 mt-20">
-            {menuItems.map((item, index) => (
+            {menuItems.map(({ name, url }) => (
               <Link
-                key={index}
+                key={url}
                 className="hover:text-green-400 transition duration-300 text-green-400"
-                href="#"
+                href={url}
                 onClick={toggleSideNav}
               >
-                {item}
+                {name}
               </Link>
             ))}
           </div>
