@@ -10,7 +10,7 @@ export const Contact: React.FC = () => {
                 <p className="text-gray-400 mb-8">
                      I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
-                <a href="mailto:ntirianinakwa@gmail.com" className="inline-block px-6 py-3 border-2 border-green-400 text-green-400 rounded-md hover:bg-teal-400 hover:text-white transition-colors">
+                <a href="mailto:ntirianinakwa@gmail.com" className="inline-block px-6 py-3 border-2 border-green-400 text-green-400 rounded-md   transition-colors">
                     Say Hello
                 </a>
             </div>

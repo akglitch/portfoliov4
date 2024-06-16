@@ -17,7 +17,7 @@ export default function App() {
 
   const menuItems = [
     {
-      name: "01.home",
+      name: "01. home",
       url: "/#",
     },
     {
