@@ -2,6 +2,7 @@ import React from 'react';
 
 export const Contact: React.FC = () => {
     return (
+        <div id='contact'>
         <div className="bg-[#0a192f] text-white p-8 flex justify-center items-center min-h-screen">
             <div className="text-center max-w-6xl mx-auto">
                 <h3 className="text-green-400 text-xl font-mono mb-4">03. What&apos;s Next?</h3>
@@ -13,6 +14,7 @@ export const Contact: React.FC = () => {
                     Say Hello
                 </a>
             </div>
+        </div>
         </div>
     );
 };

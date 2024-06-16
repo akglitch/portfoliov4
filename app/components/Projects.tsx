@@ -22,7 +22,8 @@ const projects = [
 
 export const Projects: React.FC = () => {
   return (
-    <section className="bg-[#0a192f] text-white py-16 px-8">
+    <div id='projects'>
+    <section className="bg-[#0a192f] text-white py-16 px-8 sm:min-h-screen lg:min-h-screen">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-baseline space-x-2 mb-12">
           <span className="text-green-400 text-xl font-mono">02.</span>
@@ -67,6 +68,7 @@ export const Projects: React.FC = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
