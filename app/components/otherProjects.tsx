@@ -2,20 +2,26 @@ import React from 'react';
 
 const otherProjects = [
 
- 
     {
-        title: "Contact Manager",
-        description: "A web app that enables users to easily store and find contact information, such as names and addresses.",
-        technologies: ["React.js", "Bootstrap",],
-        github: "#",
+        title: "Rmy Backend",
+        description: "rmy backend contains the logic behind the record management system",
+        technologies: ["Node.js", " Express.s", "Sql"],
+        github: "https://github.com/akglitch/rmsbackend",
         link: "#"
+    },
+    {
+        title: "Llounge",
+        description: "A simple landing page for a wine and beverage company",
+        technologies: ["Next.js", "Tailwind",],
+        github: "https://github.com/akglitch/llounge",
+        link: "https://llounge.vercel.app/"
     },
     {
         title: " Shopspaces",
         description: "I sometimes contributed to the frontend development of shopspaces.",
         technologies: ["Next.js", "Tailwind", "Material UI"],
-        github: "#",
-        link: "#"
+        github: "https://github.com/akglitch/shopspaces",
+        link: "https://shopspaces.vercel.app/"
     }
 ];
 
@@ -33,14 +39,11 @@ const OtherProjects: React.FC = () => {
                                 </svg>
                                 <div className="flex space-x-4">
                                     <a href={project.github} className="text-gray-400 hover:text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2.25c5.52 0 10 4.48 10 10s-4.48 10-10 10-10-4.48-10-10 4.48-10 10-10zM12 12h.01M8.93 8.93a5.5 5.5 0 016.14 0M9.17 15.07a5.5 5.5 0 015.66 0M7.05 12.59a8 8 0 009.9 0" />
-                                        </svg>
+                                    <img src="/internet.svg" alt="GitHub Logo" className="text-gray-50 h-5 w-5" />
+
                                     </a>
                                     <a href={project.link} className="text-gray-400 hover:text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 3H9a6 6 0 00-6 6v6a6 6 0 006 6h6a6 6 0 006-6V9a6 6 0 00-6-6z" />
-                                        </svg>
+                                    <img src="/github.svg" alt="GitHub Logo" className=" text-gray-50 h-5 w-5" />
                                     </a>
                                 </div>
                             </div>
