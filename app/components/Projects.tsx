@@ -12,14 +12,15 @@ const projects = [
     link: "https://www.bluehutsolutions.ca/",
     github: "https://github.com/akglitch/bluuhut",
   },
-  {
-    title: "rmy",
-    description: "A Record management system web application",
-    technologies: ["Next.js", "Typescript", "Tailwind", "Material UI"],
-    image: "/record.png", // Replace with your image path
-    link: "https://rmy.vercel.app/",
-    github: "https://github.com/akglitch/miniproject",
-  },
+{
+  title: "Moverz",
+  description: "An on-demand moving service web application connecting customers with professional movers.",
+  technologies: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "Material UI"],
+  image: "/moverz.png", 
+  link: "https://moverz.vercel.app/",
+  github: "https://github.com/akglitch/moverz"
+}
+
 ];
 
 export const Projects: React.FC = () => {
