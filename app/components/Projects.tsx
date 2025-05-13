@@ -12,14 +12,25 @@ const projects = [
     link: "https://www.bluehutsolutions.ca/",
     github: "https://github.com/akglitch/bluuhut",
   },
-  {
-    title: "rmy",
-    description: "A Record management system web application",
-    technologies: ["Next.js", "Typescript", "Tailwind", "Material UI"],
-    image: "/record.png", // Replace with your image path
-    link: "https://rmy.vercel.app/",
-    github: "https://github.com/akglitch/miniproject",
-  },
+{
+  title: "Moverz",
+  description: "An on-demand moving service web application connecting customers with professional movers.",
+  technologies: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "Material UI"],
+  image: "/moverz.png", 
+  link: "https://moverz.vercel.app/",
+  github: "https://github.com/akglitch/moverz"
+},
+
+{
+  title: "LiquidLounge",
+  description: "Explore the world of fine wines and exquisite drinks. Immerse yourself in the rich flavors and aromas that make every sip a moment to cherish.",
+  technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Framer Motion"],
+  image: "/lounge.png",
+  link: "https://llounge.vercel.app/",
+  github: "https://github.com/akglitch/llounge"
+}
+
+
 ];
 
 export const Projects: React.FC = () => {
@@ -68,17 +79,17 @@ export const Projects: React.FC = () => {
                   </ul>
                   <div className="flex space-x-4">
                     <Link
-                      href={project.github}
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
-                    >
-                     <img src="/github.svg" alt="GitHub Logo" className=" text-gray-50 h-5 w-5" />
-
-                    </Link>
-                    <Link
                       href={project.link}
                       className="text-gray-400  hover:text-white transition-colors duration-200"
                     >
-                     <img src="/internet.svg" alt="GitHub Logo" className="text-gray-50 h-5 w-5" />
+                     <img src="/github.svg" alt="Internet logo" className="text-gray-50 h-5 w-5" />
+
+                    </Link>
+                      <Link
+                      href={project.github}
+                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                    >
+                     <img src="/internet.svg " alt="GitHub Logo" className=" text-gray-50 h-5 w-5" />
 
                     </Link>
                   </div>

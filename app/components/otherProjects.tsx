@@ -1,21 +1,6 @@
 import React from 'react';
 
 const otherProjects = [
-
-    {
-        title: "Rmy Backend",
-        description: "rmy backend contains the logic behind the record management system",
-        technologies: ["Node.js", " Express.s", "Sql"],
-        github: "https://github.com/akglitch/rmsbackend",
-        link: "#"
-    },
-    {
-        title: "Llounge",
-        description: "A simple landing page for a wine and beverage company",
-        technologies: ["Next.js", "Tailwind",],
-        github: "https://github.com/akglitch/llounge",
-        link: "https://llounge.vercel.app/"
-    },
     {
         title: " Shopspaces",
         description: "I sometimes contributed to the frontend development of shopspaces.",
