@@ -19,7 +19,17 @@ const projects = [
   image: "/moverz.png", 
   link: "https://moverz.vercel.app/",
   github: "https://github.com/akglitch/moverz"
+},
+
+{
+  title: "LiquidLounge",
+  description: "Explore the world of fine wines and exquisite drinks. Immerse yourself in the rich flavors and aromas that make every sip a moment to cherish.",
+  technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Framer Motion"],
+  image: "/lounge.png",
+  link: "https://liquidlounge.example.com/",
+  github: "https://github.com/akglitch/llounge"
 }
+
 
 ];
 
