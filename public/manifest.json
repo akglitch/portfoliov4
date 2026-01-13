@@ -1,0 +1,17 @@
+{
+    "name": "Kwaku Ntiri - Software Developer Portfolio",
+    "short_name": "KT Portfolio",
+    "description": "Portfolio of Kwaku Ntiri, a Software Developer based in Kumasi, Ghana",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a192f",
+    "theme_color": "#10b981",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ]
+}

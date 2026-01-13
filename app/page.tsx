@@ -1,28 +1,36 @@
-import Image from "next/image";
-
+"use client";
+import { NextUIProvider } from "@nextui-org/react";
 import Hero from "./components/Hero";
 import { About } from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import { Projects } from "./components/Projects";
 import OtherProjects from "./components/otherProjects";
-import Footer from "./components/Footer";
 import { Contact } from "./components/Contact";
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
-import { NextUIProvider } from "@nextui-org/react";
-
-
+import CustomCursor from "./components/CustomCursor";
+import ScrollProgress from "./components/ScrollProgress";
+import ThemeToggle from "./components/ThemeToggle";
 
 export default function Home() {
   return (
-  <NextUIProvider>
-    <main className="">
-    <Nav />
-  <Hero />
-  <About />
- <Projects />
- <OtherProjects />
- <Contact />
- <Footer />
-    </main>
+    <NextUIProvider>
+      <main className="relative">
+        <CustomCursor />
+        <ScrollProgress />
+        <Nav />
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <OtherProjects />
+        <Contact />
+        <Footer />
+        <ThemeToggle />
+      </main>
     </NextUIProvider>
   );
 }
+
