@@ -8,31 +8,112 @@ import Footer from '../components/Footer';
 
 const blogPosts = [
     {
-        title: "The Future of Artificial Intelligence in Web Development",
-        excerpt: "Exploring how LLMs and generative AI are transforming the way we build and maintain modern web applications.",
-        date: "Jan 12, 2026",
-        readTime: "5 min read",
-        slug: "future-of-ai-web-dev",
+        title: "The Rise of Large Language Models: Transforming Software Development",
+        excerpt: "Exploring how LLMs like GPT-4, Claude, and Gemini are revolutionizing code generation, debugging, and the entire software development lifecycle.",
+        date: "Jan 24, 2026",
+        readTime: "8 min read",
+        slug: "rise-of-llms-software-dev",
         category: "AI & ML",
         image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
     },
     {
-        title: "Mastering Framer Motion for Advanced UI Animations",
-        excerpt: "A deep dive into creating fluid, high-performance animations that wow users without sacrificing performance.",
-        date: "Jan 08, 2026",
-        readTime: "8 min read",
-        slug: "mastering-framer-motion",
-        category: "Design",
-        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800"
+        title: "Building Scalable APIs with Django REST Framework",
+        excerpt: "A comprehensive guide to designing, building, and deploying production-ready RESTful APIs using Django, PostgreSQL, and modern DevOps practices.",
+        date: "Jan 20, 2026",
+        readTime: "12 min read",
+        slug: "scalable-apis-django",
+        category: "Backend",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800"
     },
     {
-        title: "Scaling Next.js Applications to Millions of Users",
-        excerpt: "Best practices for architecture, caching, and deployment strategies for enterprise-grade Next.js projects.",
+        title: "Data Visualization Mastery with Power BI and Python",
+        excerpt: "Learn how to create compelling, interactive dashboards that tell data stories using Power BI, Pandas, and advanced visualization techniques.",
+        date: "Jan 18, 2026",
+        readTime: "10 min read",
+        slug: "data-viz-powerbi-python",
+        category: "Data Science",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "Next.js 15: Server Components and the Future of React",
+        excerpt: "Deep dive into React Server Components, streaming SSR, and how Next.js 15 is reshaping modern web application architecture.",
+        date: "Jan 15, 2026",
+        readTime: "9 min read",
+        slug: "nextjs-15-server-components",
+        category: "Frontend",
+        image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "Agile Scrum in the AI Era: Adapting to Rapid Innovation",
+        excerpt: "How traditional Agile methodologies are evolving to accommodate AI-assisted development, automated testing, and faster iteration cycles.",
+        date: "Jan 12, 2026",
+        readTime: "7 min read",
+        slug: "agile-scrum-ai-era",
+        category: "Project Management",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "Machine Learning Model Deployment: From Jupyter to Production",
+        excerpt: "Best practices for taking ML models from experimentation to production using Docker, Kubernetes, and MLOps pipelines.",
+        date: "Jan 10, 2026",
+        readTime: "11 min read",
+        slug: "ml-model-deployment",
+        category: "AI & ML",
+        image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "TypeScript Best Practices for Enterprise Applications",
+        excerpt: "Advanced TypeScript patterns, type safety strategies, and architectural decisions for building maintainable large-scale applications.",
+        date: "Jan 08, 2026",
+        readTime: "10 min read",
+        slug: "typescript-enterprise-best-practices",
+        category: "Frontend",
+        image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "The Data Science Pipeline: From Collection to Insights",
+        excerpt: "A complete walkthrough of modern data science workflows using Pandas, NumPy, Scikit-learn, and visualization libraries.",
+        date: "Jan 05, 2026",
+        readTime: "13 min read",
+        slug: "data-science-pipeline",
+        category: "Data Science",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "Microservices Architecture with Node.js and Docker",
+        excerpt: "Building, containerizing, and orchestrating microservices using Node.js, Express, Docker, and Kubernetes for cloud-native applications.",
         date: "Jan 03, 2026",
+        readTime: "14 min read",
+        slug: "microservices-nodejs-docker",
+        category: "Backend",
+        image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "AI-Powered Code Review: Tools and Techniques",
+        excerpt: "Leveraging AI assistants like GitHub Copilot, Amazon CodeWhisperer, and custom LLMs to improve code quality and catch bugs early.",
+        date: "Dec 30, 2025",
+        readTime: "6 min read",
+        slug: "ai-powered-code-review",
+        category: "AI & ML",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "Responsive Design in 2026: Beyond Mobile-First",
+        excerpt: "Modern responsive design strategies including container queries, fluid typography, and designing for foldable devices and AR glasses.",
+        date: "Dec 28, 2025",
+        readTime: "8 min read",
+        slug: "responsive-design-2026",
+        category: "Design",
+        image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        title: "Database Optimization: MongoDB vs PostgreSQL Performance",
+        excerpt: "Comparative analysis of NoSQL and SQL databases, indexing strategies, query optimization, and when to use each for maximum performance.",
+        date: "Dec 25, 2025",
         readTime: "12 min read",
-        slug: "scaling-nextjs-apps",
-        category: "Architecture",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
+        slug: "database-optimization-mongo-postgres",
+        category: "Backend",
+        image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=800"
     }
 ];
 
@@ -53,11 +134,11 @@ export default function BlogPage() {
                             THE BLOG<span className="text-[var(--accent-primary)]">.</span>
                         </h1>
                         <p className="text-[var(--text-secondary)] text-xl max-w-2xl leading-relaxed">
-                            Thoughts, tutorials, and insights on software engineering, data science, and the future of technology.
+                            Thoughts, tutorials, and insights on AI, software engineering, data science, and the future of technology.
                         </p>
                     </motion.div>
 
-                    {/* Featured Post */}
+                    {/* Blog Posts Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {blogPosts.map((post, index) => (
                             <motion.div
