@@ -6,6 +6,32 @@ import { Briefcase, Calendar, ChevronDown, ChevronUp } from 'lucide-react';
 
 const experiences = [
     {
+        company: 'Ministry of Youth Development and Empowerment',
+        position: 'Software Developer & Website Administrator',
+        period: 'Jan 2026 - Present',
+        location: 'Accra, Ghana',
+        description: 'Developing and maintaining the ministry\'s digital infrastructure, managing the official website, and creating software solutions to support youth development initiatives.',
+        technologies: ['React', 'Node.js', 'WordPress', 'MySQL', 'REST API'],
+        achievements: [
+            'Managing and maintaining ministry\'s official website',
+            'Developing custom software solutions for youth empowerment programs',
+            'Implementing digital systems to streamline ministry operations',
+        ]
+    },
+    {
+        company: 'Lean Icon Training and Technology',
+        position: 'Backend Developer',
+        period: 'Jan 2026 - Present',
+        location: 'Accra, Ghana',
+        description: 'Building robust backend systems and APIs for training management platforms and educational technology solutions.',
+        technologies: ['Django', 'Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'Docker'],
+        achievements: [
+            'Developing scalable backend architecture for training platforms',
+            'Implementing secure authentication and authorization systems',
+            'Optimizing database queries for improved performance',
+        ]
+    },
+    {
         company: 'Bluehut Solutions',
         position: 'Software Engineer',
         period: '2023 - Present',
