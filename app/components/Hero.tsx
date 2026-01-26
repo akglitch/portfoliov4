@@ -110,10 +110,7 @@ const Hero: React.FC = () => {
           >
             I'm a software engineer specializing in building (and occasionally
             designing) exceptional digital experiences. Currently, I'm focused on
-            building accessible, human-centered products at{" "}
-            <span className="text-[var(--accent-primary)] font-semibold">
-              Bluehut Solutions
-            </span>
+            building accessible and human-centered products
             .
           </motion.p>
 

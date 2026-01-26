@@ -153,7 +153,7 @@ export const Contact: React.FC = () => {
                                     <div>
                                         <h3 className="font-semibold mb-2">Location</h3>
                                         <p className="text-[var(--text-secondary)]">
-                                            Kumasi, Ghana
+                                            Accra, Ghana
                                         </p>
                                     </div>
                                 </div>

@@ -57,7 +57,7 @@ export const About: React.FC = () => {
                     <div className="grid md:grid-cols-3 gap-8">
                         <motion.div variants={itemVariants} className="md:col-span-2">
                             <p className="text-base leading-relaxed mb-4 text-[var(--text-secondary)]">
-                                Hello! I&apos;m Kwaku, a Software Developer based in Kumasi, Ghana.
+                                Hello! I&apos;m Kwaku, a Software Developer based in Accra, Ghana.
                             </p>
                             <p className="text-base leading-relaxed mb-4 text-[ var(--text-secondary)]">
                                 I enjoy creating beautiful and reliable applications for the internet. My goal is to always build scalable products and performant experiences.
