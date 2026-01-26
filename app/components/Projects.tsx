@@ -7,6 +7,33 @@ import { useInView } from "react-intersection-observer";
 import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
+   {
+    title: "Synesthesia Restaurant",
+    description:
+      "A dining website reimagined as interactive art. Each dish unfolds through animated storytelling, atmospheric soundscapes, and poetic visuals—turning menu browsing into a multisensory journey.",
+    technologies: ["Next.js", "Typescript", "Three.js (WebGL)", "GSAP","framer Motion"],
+    image: "/synesthesia.png",
+    link: "https://lamu-accra.vercel.app/",
+    github: "https://github.com/akglitch/LAMU",
+  },
+  {
+    title: "The Photograph",
+    description:
+      "This is a fully functional, custom-coded portfolio template designed for professional photographers. Built as a passion project",
+    technologies: ["Next.js", "Javascript", "framer Motion", "Tailwind",],
+    image: "/thephotograph.png",
+    link: "https://thephotograph.vercel.app/",
+    github: "https://github.com/akglitch/thephotograph",
+  },
+   {
+    title: "Seds Makeover",
+    description:
+      "This is a performance-driven website concept built for a modern salon or spa.",
+    technologies: ["Next.js", "Tyescript", "framer Motion", "Tailwind",],
+    image: "/sedsmakeover.png",
+    link: "https://sedsmakeover.vercel.app/",
+    github: "https://github.com/akglitch/sedsmakeover",
+  },
   {
     title: "Bluehut",
     description:
