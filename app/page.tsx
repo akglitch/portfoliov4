@@ -6,7 +6,6 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import { Certifications } from "./components/Certifications";
 import { Projects } from "./components/Projects";
-import OtherProjects from "./components/otherProjects";
 import { Contact } from "./components/Contact";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
@@ -27,7 +26,6 @@ export default function Home() {
         <Experience />
         <Certifications />
         <Projects />
-        <OtherProjects />
         <Contact />
         <Footer />
         <ThemeToggle />
