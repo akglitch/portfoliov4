@@ -8,6 +8,42 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
    {
+    title: "Enterprise Face Intelligence & Attendance System",
+    description:
+      "End-to-End CV Pipeline: Designed a real-time facial recognition system using Dlib and OpenCV with a PostgreSQL backend for persistent attendance logging. Dockerized Microservices: Containerized for seamless deployment. Optimization: 4x increase in inference speed via multi-threading.",
+    technologies: ["Python", "OpenCV", "Dlib", "PostgreSQL", "Docker", "Microservices"],
+    image: "",
+    link: "#",
+    github: "https://github.com/akglitch",
+  },
+  {
+    title: "Clinical Lung Cancer Classification Pipeline",
+    description:
+      "Deep Learning Ensemble: Diagnostic engine using DenseNet201 and ResNet50, achieving 92% accuracy. Explainable AI: Integrated Grad-CAM for clinical interpretability. Portable Infrastructure: Wrapped in Docker for model reproducibility across clinical hardware. Final Year Project.",
+    technologies: ["TensorFlow", "Keras", "DenseNet201", "ResNet50", "Grad-CAM", "Docker"],
+    image: "",
+    link: "#",
+    github: "https://github.com/akglitch",
+  },
+  {
+    title: "Automated Sophisticated Mines Game Bot",
+    description:
+      "A highly advanced automated bot for mines games, utilizing sophisticated algorithms to optimize gameplay strategy and maximize win rates.",
+    technologies: ["Python", "Algorithms", "Automation", "Bot Development"],
+    image: "",
+    link: "#",
+    github: "https://github.com/akglitch",
+  },
+  {
+    title: "Drug Prediction Machine Learning Project",
+    description:
+      "University project focused on predicting drug properties and effectiveness using machine learning models to accelerate pharmaceutical research.",
+    technologies: ["Python", "Scikit-Learn", "Pandas", "Data Science", "Machine Learning"],
+    image: "",
+    link: "#",
+    github: "https://github.com/akglitch",
+  },
+   {
     title: "Synesthesia Restaurant",
     description:
       "A dining website reimagined as interactive art. Each dish unfolds through animated storytelling, atmospheric soundscapes, and poetic visuals—turning menu browsing into a multisensory journey.",
